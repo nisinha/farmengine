@@ -1,5 +1,7 @@
 package com.farmengine.resource;
 
+import com.codahale.metrics.annotation.Timed;
+import com.farmengine.model.Request.FarmLocation;
 import com.farmengine.services.FarmDataService;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
@@ -12,7 +14,7 @@ import javax.ws.rs.core.MediaType;
 /**
  * Created by nisinha on 7/24/2016.
  */
-@Path("/cropdata")
+@Path("/farm")
 @Consumes({MediaType.APPLICATION_JSON})
 @Produces({MediaType.APPLICATION_JSON})
 @Singleton
@@ -36,5 +38,12 @@ public class FarmEngineResource {
     public Saying nd1(Saying saying) {
         saying.setContent("new Content");
         return saying;
+    }
+
+    @POST @Timed
+    @Path("/add")
+    public Saying addFarmLocation(FarmLocation location) {
+        farmEngineService.addFarmData(location);
+        return new Saying("id", "name");
     }
 }

@@ -1,9 +1,8 @@
 package com.farmengine.DAO;
 
+import com.farmengine.model.Request.FarmLocation;
 import com.farmengine.model.TEst;
-import org.skife.jdbi.v2.sqlobject.Bind;
-import org.skife.jdbi.v2.sqlobject.SqlBatch;
-import org.skife.jdbi.v2.sqlobject.SqlQuery;
+import org.skife.jdbi.v2.sqlobject.*;
 
 import java.util.List;
 
@@ -15,8 +14,8 @@ public interface FarmDao {
     @SqlQuery("select * from cropdb where id = :id")
     String findNameById(@Bind("id") int id);
 
-    @SqlBatch("insert into firstable (id, name) values (:id, :name)")
-    public void insert(List<TEst> tEsts);
+    @SqlUpdate("insert into farmlocation(farmId, farmName, customerId, latitude, longitude, radius) values (:farmId, :farmName, :customerId, :latitude, :longitude, :radius)")
+    public void insertFarmLocation(@BindBean FarmLocation location);
 
     void close();
 }

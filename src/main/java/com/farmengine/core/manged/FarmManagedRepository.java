@@ -6,11 +6,14 @@ import com.google.inject.Inject;
 import io.dropwizard.jdbi.DBIFactory;
 import io.dropwizard.lifecycle.Managed;
 import io.dropwizard.setup.Environment;
+import lombok.Getter;
+import lombok.Setter;
 import org.skife.jdbi.v2.DBI;
 
 /**
  * Created by nisinha on 7/24/2016.
  */
+@Getter @Setter
 public class FarmManagedRepository implements Managed {
 
     private final FarmDao cropDao;

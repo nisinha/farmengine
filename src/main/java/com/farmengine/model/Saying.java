@@ -19,7 +19,6 @@ public class Saying {
     private String id;
 
     @JsonProperty
-    @Length(max = 3)
     private String content;
 
 }
