@@ -1,18 +1,23 @@
-# farmengine
-This application is written in dropwizard framework
-To know more about the framework refer: http://www.dropwizard.io/
+<h1># FarmEngine</h1>
+This application is written in dropwizard framework<br>
+To know more about the framework refer: http://www.dropwizard.io/<br><br>
 
-Prerequisite
+<h2>Prerequisite</h2>
 
-Jdk <br>
-Mysql:<i>&nbsp;&nbsp;&nbsp;Set the username and password in FarmEngine.yml file</i><br>
-Maven: https://maven.apache.org/download.cgi<br><br>
+<b>Jdk</b> <br>
+<b>Mysql</b><i>&nbsp;&nbsp;Set the username and password in FarmEngine.yml file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;In mysql database, create database 'cropdb' and table 'farmlocation' with the below command <br>
+ create database cropdb;<br>
+ create table farmlocation (farmId varchar(50) not null primary key, farmName varchar(50), customerId varchar(50) not null, latitude varchar(20), longitude varchar(20), radius varchar(10));
+</i>
+<b>Maven</b> https://maven.apache.org/download.cgi<br><br>
 
-Necessary details to run the application<br>
+<h2>Building the application</h2>
 Once the prerequisite is installed, go to the root folder of the project and run <br><b>'mvn package'</b><br>
 Once the package is build, run <br><b>java -jar target/farm.core-1.0-SNAPSHOT.jar server FarmEngine.yml </b>
 <br><br>
-Apis<br>
+
+<h2>Apis</h2><br>
 To store farm location in db:<br>
 Post:<b> /farm/add </b><br>
 request body:<br>
@@ -27,9 +32,6 @@ request body:<br>
 }
 </i>
 
-in mysql database, create database 'cropdb' and table 'farmlocation' with the below command <br><i>
- create database cropdb;<br>
- create table farmlocation (farmId varchar(50) not null primary key, farmName varchar(50), customerId varchar(50) not null, latitude varchar(20), longitude varchar(20), radius varchar(10));
- </i>
+
  
  
