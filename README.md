@@ -9,7 +9,7 @@ To know more about the framework refer: http://www.dropwizard.io/<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;In mysql database, create database 'cropdb' and table 'farmlocation' with the below command <br>
  create database cropdb;<br>
  create table farmlocation (farmId varchar(50) not null primary key, farmName varchar(50), customerId varchar(50) not null, latitude varchar(20), longitude varchar(20), radius varchar(10));
-</i>
+</i><br>
 <b>Maven</b> https://maven.apache.org/download.cgi<br><br>
 
 <h2>Building the application</h2>
