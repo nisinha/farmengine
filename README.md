@@ -3,14 +3,15 @@ This application is written in dropwizard framework<br>
 To know more about the framework refer: http://www.dropwizard.io/<br><br>
 
 <h2>Prerequisite</h2>
-
-<b>Jdk</b> <br>
-<b>Mysql</b><i>&nbsp;&nbsp;Set the username and password in FarmEngine.yml file<br>
-&nbsp;&nbsp;&nbsp;&nbsp;In mysql database, create database 'cropdb' and table 'farmlocation' with the below command <br>
- create database cropdb;<br>
+<ul>
+<li><b>Jdk</b> <br></li>
+<li><b>Mysql</b><i>&nbsp;&nbsp;Set the username and password in FarmEngine.yml file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In mysql console enter following commands <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>create database cropdb;<br>
  create table farmlocation (farmId varchar(50) not null primary key, farmName varchar(50), customerId varchar(50) not null, latitude varchar(20), longitude varchar(20), radius varchar(10));
-</i><br>
-<b>Maven</b> https://maven.apache.org/download.cgi<br>
+</i></li>
+<li><b>Maven</b> https://maven.apache.org/download.cgi<br></li>
+</ul>
 
 <h2>Building the application</h2>
 Once the prerequisite is installed, go to the root folder of the project and run <b>'mvn package'</b><br>
