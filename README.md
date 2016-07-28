@@ -1,4 +1,4 @@
-<h1># FarmEngine</h1>
+<h1>FarmEngine</h1>
 This application is written in dropwizard framework<br>
 To know more about the framework refer: http://www.dropwizard.io/<br><br>
 
@@ -10,14 +10,14 @@ To know more about the framework refer: http://www.dropwizard.io/<br><br>
  create database cropdb;<br>
  create table farmlocation (farmId varchar(50) not null primary key, farmName varchar(50), customerId varchar(50) not null, latitude varchar(20), longitude varchar(20), radius varchar(10));
 </i><br>
-<b>Maven</b> https://maven.apache.org/download.cgi<br><br>
+<b>Maven</b> https://maven.apache.org/download.cgi<br>
 
 <h2>Building the application</h2>
-Once the prerequisite is installed, go to the root folder of the project and run <br><b>'mvn package'</b><br>
-Once the package is build, run <br><b>java -jar target/farm.core-1.0-SNAPSHOT.jar server FarmEngine.yml </b>
-<br><br>
+Once the prerequisite is installed, go to the root folder of the project and run <b>'mvn package'</b><br>
+Once the package is build, run <b>java -jar target/farm.core-1.0-SNAPSHOT.jar server FarmEngine.yml </b>
+<br>
 
-<h2>Apis</h2><br>
+<h2>Apis</h2>
 To store farm location in db:<br>
 Post:<b> /farm/add </b><br>
 request body:<br>
