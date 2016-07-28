@@ -1,14 +1,15 @@
 # farmengine
-Prereqisite
+Prerequisite
 
 Install jdk
 Install mysql
   Set the username and password in FarmEngine.yml file
+
+Necessary details to run the application
 program arguments: server FarmEngine.yml
 Main class: com.farmengine.FarmEngineApplication
 
 Apis
-
 To store farm location in db:
 Post: /farm/add
 requst format: 
