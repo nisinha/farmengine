@@ -1,4 +1,7 @@
 # farmengine
+This application is written in dropwizard framework
+To know more about the framework refer: http://www.dropwizard.io/
+
 Prerequisite
 
 Install jdk
