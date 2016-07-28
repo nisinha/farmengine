@@ -1,7 +1,7 @@
 database:
   driverClass: com.mysql.jdbc.Driver
   user: root
-  password: mysql
+  password: 
   url: jdbc:mysql://localhost:3306/cropdb
   properties:
     charSet: UTF-8
