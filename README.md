@@ -4,16 +4,17 @@ To know more about the framework refer: http://www.dropwizard.io/
 
 Prerequisite
 
-Install jdk
-Install mysql
+Jdk
+Mysql
   Set the username and password in FarmEngine.yml file
+Maven: https://maven.apache.org/download.cgi
 
 Necessary details to run the application
-program arguments: server FarmEngine.yml
-Main class: com.farmengine.FarmEngineApplication
+Once the prerequisite is installed, go to the root folder and run <b>'mvn package'</b>
+Once the package is build, run <b>java -jar target/farm.core-1.0-SNAPSHOT.jar server FarmEngine.yml </b>
 
 Apis
-To store farm location in db:
+To store farm location in db:<br>
 Post: /farm/add
 requst format: 
 {
