@@ -8,7 +8,7 @@ To know more about the framework refer: http://www.dropwizard.io/<br><br>
 <li><b>Mysql</b><i>&nbsp;&nbsp;Set the username and password in FarmEngine.yml file<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In mysql console enter following commands <br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>create database cropdb;<br>
- create table farmlocation (farmId varchar(50) not null primary key, farmName varchar(50), customerId varchar(50) not null, latitude varchar(20), longitude varchar(20), radius varchar(10));
+ create table farmlocation (farmId varchar(50) not null primary key, farmName varchar(50), customerId varchar(50) not null, latitude varchar(20), longitude varchar(20), radius varchar(10), crop varchar(20));
 </i></b></li>
 <li><b>Maven</b> https://maven.apache.org/download.cgi<br></li>
 </ul>
@@ -29,7 +29,8 @@ request body:<br>
   "farmName": "My First Farm",
   "latitude": "17.4621407",
   "longitude": "78.34546019999999",
-  "radius": "1000"
+  "radius": "1000",
+  "crop";"tea"
 }
 </i>
 
