@@ -1,8 +1,8 @@
 database:
-  driverClass: com.mysql.jdbc.Driver
-  user: root
+  driverClass: org.postgresql.Driver
+  user: postgres
   password: 
-  url: jdbc:mysql://localhost:3306/cropdb
+  url: jdbc:postgresql://localhost:5432/cropdb
   properties:
     charSet: UTF-8
   maxWaitForConnection: 1s
