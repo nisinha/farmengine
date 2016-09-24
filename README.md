@@ -5,7 +5,7 @@ To know more about the framework refer: http://www.dropwizard.io/<br><br>
 <h2>Prerequisite</h2>
 <ul>
 <li><b>Jdk</b> <br></li>
-<li><b>Mysql</b><i>&nbsp;&nbsp;Set the username and password in FarmEngine.yml file<br>
+<li><b>Postgres</b><i>&nbsp;&nbsp;Set the username and password in FarmEngine.yml file<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In mysql console enter following commands <br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i>create database cropdb;<br>
  create table farmlocation (farmId varchar(50) not null primary key, farmName varchar(50), customerId varchar(50) not null, latitude varchar(20), longitude varchar(20), radius varchar(10), crop varchar(20));
